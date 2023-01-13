@@ -7,7 +7,7 @@ const dbConnection = async () => {
     //     docker: "mongo"
     // }
 
-    const mongo_cnn = "mongodb://mongo:WQcjY0T1IpnEJ5TD0wtC@containers-us-west-35.railway.app:5880/comments"
+    const mongo_cnn = "mongodb://mongo:WQcjY0T1IpnEJ5TD0wtC@containers-us-west-35.railway.app:5880/pickle_rick_db"
 
     try {
 
