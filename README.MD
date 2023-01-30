@@ -4,4 +4,4 @@
 
 documentación de postman: https://documenter.getpostman.com/view/10033004/2s8ZDR9RmV
 
-## Enlace al front del aplicación : https://github.com/mattpding11/pickle-rick-front
+## Enlace al front de la aplicación : https://github.com/mattpding11/pickle-rick-front
