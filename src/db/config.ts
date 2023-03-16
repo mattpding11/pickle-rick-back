@@ -2,20 +2,20 @@ const mongoose = require('mongoose');
 
 const dbConnection = async () => {
 
-    const host = {
-        local: "127.0.0.1",
-        docker: "mongo"
-    }
+    const mongo_cnn = `mongodb://mongo:8K8pCKXQGwZU1PNdtQjB@containers-us-west-35.railway.app:5880`
 
-    const mongo_cnn = `mongodb://${host.docker}/pickle_rick_db`
+    // if you have a own mongo cnn comment on the mongo_cnn above and replace for this:
+    // const mongo_cnn = ""
 
-    const mongo_cnn_prod = "mongodb://mongo:WQcjY0T1IpnEJ5TD0wtC@containers-us-west-35.railway.app:5880"
+    // To test only on develepoment proof this and comment on the above up and set the db_name const
+    // const db_name = ""
+    // const mongo_cnn = `mongodb://127.0.0.1:27017/${db_name}`
 
     try {
 
         mongoose.set("strictQuery", false);
 
-        await mongoose.connect(mongo_cnn_prod, {
+        await mongoose.connect(mongo_cnn, {
             useNewUrlParser: true,
         });
 

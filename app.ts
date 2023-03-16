@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-import Server from './models/server'
+import Server from './src/models/server'
 
 const app = new Server();
 
