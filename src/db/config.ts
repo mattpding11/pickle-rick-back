@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 const dbConnection = async () => {
 
-    const mongo_cnn = `mongodb://mongo:8K8pCKXQGwZU1PNdtQjB@containers-us-west-35.railway.app:5880`
+    // This is of my private enviroment from railway.app
+    // If you can test you need to pass you local enviroment with mongo db (yo need to create a data base first)
+    // Also can replace this variable for you own moungo_url online in another service
+    const mongo_cnn = process.env.MONGO_URL;
 
     // if you have a own mongo cnn comment on the mongo_cnn above and replace for this:
     // const mongo_cnn = ""
